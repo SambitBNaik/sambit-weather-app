@@ -1,0 +1,206 @@
+/* Details Page Structure */
+.details-page {
+    animation: fadeUp 0.5s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.back-btn {
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.city-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.city-subtitle {
+    color: var(--text-muted);
+}
+
+/* Stat Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.stat-icon-wrapper {
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.stat-label {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.stat-value {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Charts Grid container */
+.charts-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+
+/* Overlay / Expanded View Styles */
+.chart-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(241, 245, 249, 0.85);
+    /* Light Slate backdrop */
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.chart-overlay-content {
+    width: 100%;
+    max-width: 1200px;
+    height: 70vh;
+    animation: scaleUp 0.3s ease-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.chart-overlay-content .chart-container-glass {
+    height: 100%;
+    margin-top: 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.close-overlay-btn {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.close-overlay-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Charts & Forecast Inner Styling */
+.chart-container {
+    padding: 24px;
+    height: 350px;
+    margin-top: 24px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+.forecast-strip {
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.forecast-day {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+    margin: 8px 0;
+}
+
+.forecast-temp {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.forecast-desc {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}

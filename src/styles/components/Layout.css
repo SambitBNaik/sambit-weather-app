@@ -1,0 +1,54 @@
+.layout-root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-header {
+    position: sticky;
+    top: 20px;
+    z-index: 50;
+    margin: 20px auto 40px auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1600px;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.search-section {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 24px;
+}
+
+.actions-section {
+    display: flex;
+    align-items: center;
+}
+
+.page-main {
+    padding-bottom: 40px;
+}

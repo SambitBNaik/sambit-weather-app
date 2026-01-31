@@ -1,0 +1,38 @@
+:root {
+    /* Brand Colors - Adjusted for Light Mode Contrast */
+    --color-primary: #4f46e5;
+    /* Indigo 600 */
+    --color-secondary: #9333ea;
+    /* Purple 600 */
+    --color-accent: #0ea5e9;
+    /* Sky 500 */
+
+    /* Backgrounds */
+    --bg-app: #f8fafc;
+    /* Slate 50 */
+    --bg-card: rgba(255, 255, 255, 0.65);
+    --bg-card-hover: rgba(255, 255, 255, 0.85);
+    --bg-glass: rgba(255, 255, 255, 0.9);
+    --bg-tooltip: rgba(255, 255, 255, 0.95);
+
+    /* Text */
+    --text-main: #0f172a;
+    /* Slate 900 */
+    --text-muted: #64748b;
+    /* Slate 500 */
+    --text-inverse: #f8fafc;
+    /* Text on dark backgrounds (like tooltips if needed) */
+
+    /* Borders & Shadows */
+    --border-glass: rgba(148, 163, 184, 0.2);
+    /* Subtle Slate border */
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* Spacing & Radius */
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+
+    /* Transitions */
+    --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

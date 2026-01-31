@@ -1,0 +1,79 @@
+.chart-container-glass {
+    padding: 24px;
+    height: 350px;
+    margin-top: 24px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-glass);
+}
+
+
+.chart-container-glass:hover,
+.chart-container-glass:focus-within {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    /* transform: translateY(-2px); Optional subtle lift */
+}
+
+.chart-title {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+.forecast-container {
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+}
+
+.forecast-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+}
+
+.forecast-day-label {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+    margin: 8px 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    /* Add shadow for better visibility */
+}
+
+.forecast-temp {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.forecast-main {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+
+.tooltip-item {
+    color: #f8fafc;
+}
+
+
+.recharts-wrapper:focus {
+    outline: none !important;
+}
+
+*:focus {
+    outline: none !important;
+}
