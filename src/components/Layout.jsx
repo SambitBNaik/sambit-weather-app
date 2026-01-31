@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/components/Layout.css';
-import { CloudRain } from 'lucide-react';
+import { CloudRain, CloudSunRain } from 'lucide-react';
 import SearchBar from './SearchBar';
 import UnitToggle from './UnitToggle';
 import { Outlet } from 'react-router-dom';
@@ -10,10 +10,11 @@ const Layout = () => {
       <header className='glass-panel layout-header'>
         <div className='brand-container'>
           <div className='brand-icon'>
-            <CloudRain color='white' size={24}/>
+            {/* <CloudRain color='white' size={24}/> */}
+            <CloudSunRain color='white' size={24}/>
           </div>
           <h1 className='brand-title'>
-            Atmosphere
+            Atmos.io
           </h1>
         </div>
 
