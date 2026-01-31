@@ -16,7 +16,7 @@ export const fetchWeather = async(lat,lon)=>{
 
 export const searchCitis = async(query)=>{
     try {
-        const res = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`);
+        const res = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`);
         return res.data;
     } catch (error) {
         console.error("Error in the searchCitis service",error);
