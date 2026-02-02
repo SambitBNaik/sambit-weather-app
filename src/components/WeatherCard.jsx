@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { removeFavorite } from "../redux/favoriteSlice";
-import { Droplet, Droplets, Wind, X } from "lucide-react";
+import { Droplet, Droplets, Wind, X, Star } from "lucide-react";
 import "../styles/components/WeatherCard.css";
 
 const WeatherCard = ({ cityId }) => {
@@ -49,7 +49,8 @@ const WeatherCard = ({ cityId }) => {
       onClick={() => navigate(`/city/${cityId}`)}
     >
       <button onClick={handleRemove} className="card-remove-btn">
-        <X size={16} />
+        {/* <X size={16} /> */}
+        <Star  size={16} fill="#fbbf24" color="#fbbf24"/>
       </button>
 
       <div className="card-header">
