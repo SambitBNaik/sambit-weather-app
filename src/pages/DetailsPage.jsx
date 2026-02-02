@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
-import { getForecast } from "../features/weatherSlice";
+import { getForecast } from "../redux/weatherSlice";
 import "../styles/pages/DetailsPage.css";
 import { ArrowLeft, Droplets, Gauge, Thermometer, Wind } from "lucide-react";
 import HourlyChart from "../components/HourlyChart";

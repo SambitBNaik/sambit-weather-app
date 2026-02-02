@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { removeFavorite } from "../features/favoriteSlice";
+import { removeFavorite } from "../redux/favoriteSlice";
 import { Droplet, Droplets, Wind, X } from "lucide-react";
 import "../styles/components/WeatherCard.css";
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleUnit } from '../features/settingsSlice';
+import { toggleUnit } from '../redux/settingsSlice';
 import "../styles/components/UnitToggle.css";
 
 const UnitToggle = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getWeather } from '../features/weatherSlice';
+import { getWeather } from '../redux/weatherSlice';
 import { CloudSun } from 'lucide-react';
 import WeatherCard from '../components/WeatherCard';
 import "../styles/pages/DashboardPage.css";

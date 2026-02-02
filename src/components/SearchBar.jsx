@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useFetcher } from 'react-router-dom';
 import { searchCitis } from '../services/weatherservice';
-import { addFavorite } from '../features/favoriteSlice';
-import { getWeather } from '../features/weatherSlice';
+import { addFavorite } from '../redux/favoriteSlice';
+import { getWeather } from '../redux/weatherSlice';
 import { Loader, MapPin, Plus, Search } from 'lucide-react';
 import '../styles/components/Search.css';
 
